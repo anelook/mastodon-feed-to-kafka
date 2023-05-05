@@ -4,6 +4,7 @@ export default async (onStream: (status: string) => void) => {
     try {
         const masto = await login({
             url: 'https://mastodon.social/',
+            accessToken: 'your-access-token'
         });
 
         // Connect to the streaming api
